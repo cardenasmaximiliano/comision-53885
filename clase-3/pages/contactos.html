@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!--shift + alt + flechita abajo-->
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="">contactos</a></li>
+                <li><a href="">nosotros</a></li>
+                <li><a href="">tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--formularios-->
+        <form action="">
+            <fieldset>
+                <legend>datos personales</legend>
+                <label for="nombre">nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="contrasenia">contraseña:</label>
+                <input type="password" name="contrasenia" id="contrasenia" required>
+                <label for="suscripcion">suscribite:</label>
+                <input type="checkbox" id="suscripcion" name="suscripcion" value="newsletter">
+                
+                <div>
+                    <label for="m">masculino:</label>
+                    <input type="radio" id="m" name="sexo" value="masculino">
+                    <label for="f">femenino:</label>
+                    <input type="radio" id="f" name="sexo" value="femenino">
+                </div>
+                <label for="edad">edad:</label>
+                <input type="number" id="edad" name="edad">
+                <label for="email">mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensaje">mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="20" rows="10"></textarea>
+
+                <div>
+                    <p>talle:</p>
+                    <select name="talle" id="talle">
+                        <option value="s">s</option>
+                        <option value="m">m</option>
+                        <option value="l">l</option>
+                        <option value="xl">xl</option>
+                    </select>
+
+                </div>
+                <input type="submit" value="registrate">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<!-- <style> esto pertencia a css2 y hoy en dia se considera mala practica hacerlo
+    header{
+        background-color: blue;
+        color: white;
+    }
+</style> -->
+<body>
+    <!-- <header style="background-color:red;">  css1-->
+    <header>
+        <h1>titulo del sitio</h1>
+        <nav>
+            <ul class="navBar">
+                <!--shift + alt + flechita abajo-->
+                <li><a href="">inicio</a></li>
+                <li><a href="./pages/contactos.html">contactos</a></li>
+                <li><a href="">nosotros</a></li>
+                <li><a href="">tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+          <!--
+                el atributo class, le da una identidad a la etiqueta
+                para crear una clase se tiene que crear un nombre clave,
+                ese nombre clave suele describir a la seccion donde se va aplicar
+
+                existen estandarizaciones globales, 
+
+                "seccion secundaria del index" => esto html lo reconoce como diferentes clases 
+                camelCase = seccionSecundariaIndex 
+                kebab = seccion-secundaria-del-index
+                snake_case = seccion_secundaria_del_index
+                BEM = BLOQUE ELEMENTO MODIFICADOR
+            -->
+        <section class="">
+            <h2>section1</h2>
+        </section>
+        <section class="seccionSecundariaIndex">
+            <h2>section2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, aliquid. Vero ea cum eos sed enim accusantium excepturi nam ratione, voluptatibus autem mollitia quae quasi! Quod laboriosam unde tempora nisi!</p>
+            <h2 class="h2Bis" id="h2Id">section2 bis</h2>
+        </section>
+        <section class="seccionSecundariaIndex">
+            <h2>section3</h2>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

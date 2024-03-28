@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>clase 2 - coderhouse</title>
+    </head>
+    <body>
+        <!-- esto es para crear comentarios -->
+        <!-- tambien nos genera comentarios -->
+        <!--Etiquetas contenedoras de primer 
+        siempre tienen que estar. 
+        Una particularidad que tienen es que no pueden estar contenidas unas por otras
+        -->
+        <header></header> <!--al encabezado, suele ser la parte superior de una pagina web,
+        contiene elmentos como logo, menu de navegacion y otros elementos que sean importantes-->
+        <main></main> <!-- contenido principal, se coloca toda la informacion que este directamente
+            relacionada con el sitio web--->
+        <footer></footer> <!--pie de pagina, suele ser la parte inferior del sitio, generalmente contiene 
+            informacion adicional,
+        entre ellas, redes sociales, numeros de contacto etc-->
+        
+        <!--etiqueta de primer orden que puede no estar-->
+        <aside></aside> <!--etiqueta que lleva informacion que no esta directamente relacionada a nuestro sitio
+        tipos de informacion como publicidades, anuncios, o enlaces relacionados
+        -->
+
+        <!--etiquetas contenedoras de segundo orden: son etiquetas que pueden estar dentro de las etiquetas 
+        de primer orden y al mismo pueden estar dentro de si mismas-->
+        
+        <section></section> <!--las secciones dentro de mi sitio, nos sirve para agrupar informacion 
+        que queremos que SEO detecte como importante-->
+        <article></article> <!-- es una etiqueta que representa contenido independiente y autono dentro de un sitio web
+        
+        -->
+        <div></div> <!--es la etiqueta mas antigua y mega segunda, de tipo generica, solamente nos sirve para agrupar 
+        informacion, del tipo que no nos interesa que detecte SEO-->
+
+        <!--etiquetas de contenido-->
+        
+        <!--titulos => heading tags, o los famosos H, texto que va a formar titulos-->
+        <!-- <h1>titulo principal</h1> solamente se puede aplicar 1 por HTML
+        <h2>titulo secundario</h2> se utilizan todos los que sean necesarios
+        <h3>titulo</h3>
+        <h4>titulo</h4>
+        <h5>titulo</h5>
+        <h6>titulo</h6> -->
+        
+        <h1>chevrolet</h1>
+        
+        <h2>autos</h2>
+            <h3>cruze</h3>
+            <h3>onix</h3>
+        <h2>camionetas</h2>
+            <h3>s10</h3>
+            <h3>terrarblazer</h3>
+
+        <p>Lorem ipsum dolor <span>MAXIMILIANO cardenas</span> adipisicing elit. <br> Ullam soluta ipsam neque necessitatibus quasi consectetur consequuntur doloremque eius? 
+            Accusantium iste nisi esse quam reprehenderit consectetur. Corrupti vel dolorum quam sit!</p>
+        <hr>
+        <!--listas-->
+        
+        <!--lista ordenada-->
+        
+        <ol>
+            <li>compro chocolinas</li>
+            <li>mojar en cafe las chocolinas</li>
+            <li>busca una fuente y pone las chocolinas</li>
+            <li>hace el relleno mezclando casamcrem con dulce de leche</li>
+            <li>poner dulce de leche sobre la base de chocolinas</li>
+            <li>pone chocolina sobre el mejunje</li>
+            <li>repetir...</li>
+        </ol>
+        
+        <!-- lista desordenada -->
+        
+        <ul>
+            <li>chocolina</li>
+            <li>cafe</li>
+            <li>casamcrem</li>
+            <li>whisky</li>
+        </ul>
+
+        <!-- lista de definicion-->
+
+        <dl>
+            <dt>coderhouse</dt>
+            <dd>institucion dedicada a la enseñanza de excelencia en programacion</dd>
+            <dt>maximiliano cardenas</dt>
+            <dd>la  excelencia que tiene coder</dd>
+        </dl>
+
+        <!--los enlaces, internos, relativos y absolutos-->
+        <!--los enlaces se puede llamar de diferente manera, ancla, anchor o etiqueta A -->
+
+        <!-- <a href="">enlace</a> -->
+
+
+        <!--enlaces absolutos, son esos enlaces que nos van a permitir conectarnos con otros sitios webs-->
+
+        <a href="https://www.apple.com/apple-vision-pro/" target="_blank"> sitio oficial de Apple</a>
+
+        <!--enlace relativo, es el que nos permite comunicarnos con archivos dentro de nuestro proyecto
+        
+            . => quiere decir hacia adelante
+            .. => quiere decir hacia atras
+        -->
+        <nav> <!--barra de navegacion principal de nuestro sitio,-->
+            <ul>
+                <li><a href="">contactos</a></li>
+                <li><a href="">tienda</a></li>
+                <li><a href="">nosotros</a></li>
+            </ul>
+        </nav>
+
+        <!--multimedia-->
+
+        <img src="./assets/img/goku.png" alt="">
+        <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="atardecer con montañas">
+
+        <video src="./assets/video/schnauzer.mp4" controls></video>
+        <audio src="./assets/audio/audio.mp3" controls></audio>
+
+        <!--unas etiquetas llamadas iframe, estas etiquetas iframe
+        nos traen porciones de otros sitios webs
+        -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ms2mgujTRZk?si=JvkwtKw4ffZoOtr6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ms2mgujTRZk?si=d1dpn0Ri0BwsYBAH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6kTwzV93qpcovlRPmBOXmn?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6661.495590826248!2d-57.555206605886355!3d-38.00496036050297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dea958e0b1e9%3A0x4407a1c917bd18e7!2sTaller%20de%20Fotograf%C3%ADa%20y%20Lenguaje%20Visual%20Salto%20Luz!5e0!3m2!1ses!2sar!4v1711417982423!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </body>
+</html>

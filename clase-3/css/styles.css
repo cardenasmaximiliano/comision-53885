@@ -1,0 +1,55 @@
+header{
+    background-color: rgb(209, 114, 114);
+}
+header h1{
+    /*propiedades para texto*/
+    text-align: right;
+    text-decoration:underline;
+    text-transform:lowercase;
+    
+    /**propiedades para las fuentes**/
+    /**por defecto las medidas que se utilizan en desarrollo web
+    son los pixeles 
+    **/
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+}
+main{
+    background-color: grey;
+}
+
+.navBar{
+    list-style:none;
+}
+.navBar li a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    background-color: lightblue;
+}
+
+/* si quiero llamar una clase se pone un puntito . adelante del nombre */
+
+.seccionSecundariaIndex{
+    background-color: rgb(246, 231, 24);
+}
+
+.seccionSecundariaIndex h2{
+    color: red;
+    text-align: center;
+}
+
+.seccionSecundariaIndex p{
+    color: white;
+}
+
+.seccionSecundariaIndex .h2Bis{
+    color: green;
+}
+
+#h2Id{
+    color: blue;
+}
