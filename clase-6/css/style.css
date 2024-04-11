@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(4,200px);/*crea columnas la cantidad que nosotros debemos crear como maximo siempre es 12*/
+    grid-template-rows: repeat(3,200px); /*crea filas las que sean necesarias*/
+    grid-template-areas:
+    "div2 div1 div1 div1"
+    "div2 div4 div4 div5"
+    "div3 div6 div6 div5"
+    ;
+    column-gap: 1.25rem;
+    row-gap: .3125rem;
+    /**si yo quiero mover el contenedor**/
+    justify-content: center ; 
+    align-content: center ;
+    /**si quiero mover el contenido**/
+     /* justify-items:center ;
+    align-items:center ;  */
+}
+
+.grid .div1{
+    background-color: lightblue;
+    grid-area: div1;
+    align-self: center;
+    justify-self: center;
+}
+.grid .div2{
+    background-color: rgb(226, 230, 173);
+    grid-area: div2;
+}
+.grid .div3{
+    background-color: rgb(173, 173, 230);
+    grid-area: div3;
+}
+.grid .div4{
+    background-color: rgb(230, 173, 207);
+    grid-area: div4;
+}
+.grid .div5{
+    background-color: rgb(226, 163, 28);
+    grid-area: div5;
+}
+.grid .div6{
+    background-color: rgb(224, 66, 66);
+    grid-area: div6;
+}
+
+/* .grid-layout{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80% auto;
+}
+
+header{
+    background-color: lightblue;
+}
+main{
+    background-color: yellow;
+}
+footer{
+    background-color: rgb(0, 105, 128);
+} */
+
+
+header{
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    align-items: center;
+}
+
+header img{
+    width: 3.75rem;
+}
+
+.navbar{
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: orange;
+    font-size: 1.25rem;
+}
+
+.section-principal{
+    display: grid;
+    background-color: rgba(128, 128, 128, 0.142);
+    width: 100%;
+    height: 31.25rem;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.section-principal img{
+    width: 100%;
+}
+
+.img1{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    order: 3;
+}
+.section-principal .img2{
+    width: 200px;
+    grid-column: 4 / 6;
+    grid-row: 4/5;
+    order: 2;
+    justify-self: right;
+}
+.section-principal .img3{
+    width: 25rem;
+    grid-column: 6/8;
+    grid-row: 1 / 3;
+    order: 1;
+}
+h1{
+    grid-column: 4/6;
+    grid-row: 2/3;
+    order: 4;
+}
