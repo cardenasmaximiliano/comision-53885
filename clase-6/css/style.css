@@ -130,6 +130,11 @@ header img{
 }
 h1{
     grid-column: 4/6;
-    grid-row: 2/3;
+    grid-row: 2/5;
     order: 4;
+    justify-self: center;
+    align-self: center;
+    font-size: 2.5rem;
+    
+    font-family: monospace
 }

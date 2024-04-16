@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a picture img, source{
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 1.875rem;
+    padding-right: 1.875rem;
+}
+.navbar li a{
+    text-decoration: none;
+    color: orange;
+    font-size: 1.5625rem;
+
+}
+.section-principal{
+    background-image:url(../assets/img/goku.png);
+    width: 100%;
+    height: 31.25rem;
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-dos .galeria{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 15.625rem);
+    grid-template-areas: 
+    "img1 img1 img2 img2"
+    "img1 img1 img5 img5"
+    "img3 img4 img5 img5"
+    ;
+    gap: .625rem;
+}
+
+.section-dos .galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1{
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+.img5 {
+    grid-area: img5;
+}
+
+/**
+si queremos ir de mobile a desktop
+425px 
+primero va todo el codigo que corresponde a mobile
+
+@media (min-width:768px){
+
+}
+
+**/
+
+
+@media (max-width: 1024px){
+    /****/
+    header{
+        background-color: rgb(53, 136, 53);
+    }
+    .navbar li a{
+        color: violet;
+        font-family: monospace;
+        font-size: 1.875rem;
+    }
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        background-color: rgb(38, 38, 114);
+    }
+    .navbar li a{
+        color: white;
+    }
+
+    .section-principal{
+        background-position: center;
+    }
+    .section-dos .galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,15.625rem);
+        grid-template-areas: 
+        "img1 img1"
+        "img2 img2"
+        "img3 img4"
+        "img5 img4"
+
+
+        
+        ;
+    }
+    .section-dos .galeria .img4{
+        object-fit: contain;
+    }
+    }
+
+@media (max-width: 425px){
+    .navbar{
+        flex-direction: column;
+        padding-right: none;
+        align-items: center;
+
+    }
+    .navbar li a{
+        font-size: 1.5rem;
+    }
+    .section-principal{
+        background-size: contain;
+        background-image: url(../assets/img/editorial-design-vector-illustration-about-600nw-2316996087.webp);
+        height: 18.75rem;
+    }
+    .section-dos .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,15.625rem);
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        ;
+    }
+    .section-dos .galeria .img5{
+        display: none;
+    }
+}
+
+@media(max-width:320px){
+    .section-dos .galeria{
+        grid-template-rows: repeat(5,15.625rem);
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        ;
+    }
+    .section-dos .galeria .img5{
+        display: block;
+    }
+}
